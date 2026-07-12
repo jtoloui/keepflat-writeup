@@ -58,40 +58,16 @@ figcaption {
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 }
 
-/* gallery / swipeable carousel (works without JS via native scroll) */
+/* gallery: images side by side on one row, stacking on narrow screens */
 .gallery {
   display: flex; gap: 1rem; margin: 1.8rem 0;
-  overflow-x: auto; scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch; scroll-behavior: smooth;
-  padding-bottom: 0.5rem;
+  align-items: flex-start;
 }
-.gallery figure {
-  margin: 0; flex: 0 0 auto; scroll-snap-align: center;
-  width: min(78%, 300px);
-}
+.gallery figure { margin: 0; flex: 1 1 0; min-width: 0; }
 .gallery img { border-radius: 12px; }
-.gallery::-webkit-scrollbar { height: 8px; }
-.gallery::-webkit-scrollbar-thumb { background: #d6d6d6; border-radius: 8px; }
-
-/* carousel controls (injected by carousel.js) */
-.carousel { position: relative; }
-.carousel-btn {
-  position: absolute; top: 40%; transform: translateY(-50%);
-  width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--rule);
-  background: rgba(255, 255, 255, 0.92); color: var(--ink); font-size: 1.3rem; cursor: pointer;
-  display: flex; align-items: center; justify-content: center; z-index: 2;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-}
-.carousel-btn:hover { background: #fff; }
-.carousel-prev { left: -6px; }
-.carousel-next { right: -6px; }
-.carousel-dots { display: flex; gap: 0.4rem; justify-content: center; margin-top: 0.4rem; }
-.carousel-dot { width: 8px; height: 8px; border-radius: 50%; background: #cfcfcf; border: 0; padding: 0; cursor: pointer; }
-.carousel-dot[aria-current="true"] { background: var(--accent); }
 
 @media (max-width: 600px) {
   body { font-size: 18px; padding: 1.75rem 1rem 4rem; }
   h1 { font-size: 1.8rem; }
-  .gallery figure { width: 82%; }
-  .carousel-btn { display: none; }
+  .gallery { flex-direction: column; }
 }

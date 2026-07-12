@@ -19,7 +19,6 @@ mkdirSync(dist, { recursive: true });
 
 writeFileSync(join(dist, 'index.html'), html);
 cpSync(join(root, 'src', 'styles.css'), join(dist, 'styles.css'));
-cpSync(join(root, 'src', 'carousel.js'), join(dist, 'carousel.js'));
 cpSync(join(root, 'assets'), join(dist, 'assets'), { recursive: true });
 writeFileSync(join(dist, '.nojekyll'), '');
 
