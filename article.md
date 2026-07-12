@@ -147,6 +147,8 @@ Should anyone lean on a personal learning project for real treatment decisions? 
 
 If you take one thing from this, take a look at Smithy. It deserves more attention than it gets outside AWS.
 
+And a personal note to close on. I've lived with type 1 for over seventeen years, and it isn't going anywhere. What changed isn't the diabetes, it's how well I can see it. Having what I've logged, the insulin still on board, and the trend all in one place helped me put the pieces together and feel in charge of it, rather than the other way round. Rebuilding this taught me plenty as an engineer. What it shows me every day has helped me manage better, and get on with living the rest of my life.
+
 ## Links
 
 [Kiro CLI](https://kiro.dev) is the agentic command-line tool I used to build this.
