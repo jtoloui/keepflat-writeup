@@ -9,7 +9,8 @@ const dist = join(root, 'dist');
 const md = new MarkdownIt({ html: true, linkify: true, typographer: true });
 
 const source = readFileSync(join(root, 'article.md'), 'utf8');
-const body = md.render(source);
+const BASE = 'https://jtoloui.github.io/keepflat-writeup/';
+const body = md.render(source).replaceAll('src="assets/', `src="${BASE}assets/`);
 
 const template = readFileSync(join(root, 'src', 'template.html'), 'utf8');
 const html = template.replace('{{content}}', body);

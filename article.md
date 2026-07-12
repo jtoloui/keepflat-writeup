@@ -149,11 +149,15 @@ If you take one thing from this, take a look at Smithy. It deserves more attenti
 
 ## Links
 
-- [Kiro CLI](https://kiro.dev) is the agentic command-line tool I used to build this.
-- [Smithy](https://smithy.io) is the interface definition language behind the contract-first design.
-- [Nightscout (cgm-remote-monitor)](https://github.com/nightscout/cgm-remote-monitor) is the original open-source project this learns from.
-- [Nocturne](https://github.com/nightscout/nocturne) is the Nightscout Foundation's next-generation rebuild, which shaped my v4 design.
-- Please consider supporting the [Nightscout Foundation](https://nightscoutfoundation.org), the non-profit and volunteers who keep it all running.
+[Kiro CLI](https://kiro.dev) is the agentic command-line tool I used to build this.
+
+[Smithy](https://smithy.io) is the interface definition language behind the contract-first design.
+
+[Nightscout (cgm-remote-monitor)](https://github.com/nightscout/cgm-remote-monitor) is the original open-source project this learns from.
+
+[Nocturne](https://github.com/nightscout/nocturne) is the Nightscout Foundation's next-generation rebuild, which shaped my v4 design.
+
+Please consider supporting the [Nightscout Foundation](https://nightscoutfoundation.org), the non-profit and the volunteers who keep it all running.
 
 ---
 
