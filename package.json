@@ -1,0 +1,13 @@
+{
+  "name": "keepflat-writeup",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Static render of the keepflat Smithy + Kiro CLI write-up for GitHub Pages.",
+  "scripts": {
+    "build": "node build.mjs"
+  },
+  "dependencies": {
+    "markdown-it": "^14.3.0"
+  }
+}
