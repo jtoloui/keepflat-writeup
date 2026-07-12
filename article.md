@@ -61,10 +61,9 @@ Any one of those is a project on its own. Together they cover four ecosystems - 
 
 <figure><img src="assets/04-home-widgets.png" alt="Three Android home-screen widgets in different sizes, each showing glucose and a sparkline"><figcaption>Home-screen widgets in three sizes, each with a live sparkline.</figcaption></figure>
 
-<div class="gallery" aria-label="Wear OS surfaces">
 <figure><img src="assets/05-watch-tile.png" alt="Wear OS glucose tile showing value, trend, delta, IOB and COB with a sparkline graph"><figcaption>The Wear OS glucose tile - value, trend, delta, IOB/COB and a sparkline.</figcaption></figure>
+
 <figure><img src="assets/06-watch-complication.png" alt="A watch-face complication showing current glucose and trend"><figcaption>And a watch-face complication. Both are fed from the phone over the Wear Data Layer.</figcaption></figure>
-</div>
 
 One thing ties all of that together: the maths is defined once and mirrored on every surface. The logic that estimates insulin-on-board, carbs-on-board and the forecast follows the same equations and parameters on the web, in the phone app, in the native widget and on the watch. Keeping them in step turned out to be quietly important, and it's what caught a bug I'll come back to.
 
@@ -108,11 +107,11 @@ The interesting bit wasn't the formula. It was the rigor. Kiro carried the chang
 
 The dose simulator is where the model is most visible. It projects glucose forward from a hypothetical dose, taking into account the insulin you already have on board. It's a "what if" projection, clearly marked as not medical advice. Never a dose to go and take.
 
-<div class="gallery" aria-label="Timeline and dose simulator">
 <figure><img src="assets/07-app-timeline.png" alt="Treatment timeline, each dose annotated with its estimated outcome and an informational-estimates-only note"><figcaption>Timeline - every dose with its estimated outcome, and the "informational estimates only" line front and centre.</figcaption></figure>
+
 <figure><img src="assets/08-calc-before.png" alt="Dose simulator with no bolus entered for the carbs, projecting a glucose rise"><figcaption>No bolus for the carbs - the simulator projects a rise.</figcaption></figure>
+
 <figure><img src="assets/09-calc-after.png" alt="Dose simulator with insulin added, the projection settling back into range"><figcaption>Add insulin - the same projection settles back in range. A simulation to explore, not advice.</figcaption></figure>
-</div>
 
 ## By the numbers
 
@@ -150,11 +149,11 @@ If you take one thing from this, take a look at Smithy. It deserves more attenti
 
 ## Links
 
-- **Kiro CLI** — <https://kiro.dev>
-- **Smithy** — <https://smithy.io>
-- **Nightscout (cgm-remote-monitor)** — <https://github.com/nightscout/cgm-remote-monitor>
-- **Nocturne (the Foundation's next-generation rebuild)** — <https://github.com/nightscout/nocturne>
-- **Support the Nightscout Foundation** — <https://nightscoutfoundation.org>
+- [Kiro CLI](https://kiro.dev) is the agentic command-line tool I used to build this.
+- [Smithy](https://smithy.io) is the interface definition language behind the contract-first design.
+- [Nightscout (cgm-remote-monitor)](https://github.com/nightscout/cgm-remote-monitor) is the original open-source project this learns from.
+- [Nocturne](https://github.com/nightscout/nocturne) is the Nightscout Foundation's next-generation rebuild, which shaped my v4 design.
+- Please consider supporting the [Nightscout Foundation](https://nightscoutfoundation.org), the non-profit and volunteers who keep it all running.
 
 ---
 
